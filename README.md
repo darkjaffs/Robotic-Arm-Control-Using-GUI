@@ -62,7 +62,7 @@ This project implements a sophisticated control system for a prosthetic arm simu
 
 ### Architecture
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   prosthetic-arm-controller/  ├── main_controller.lua          # Main control script  ├── models/                      # 3D model files  │   └── prosthetic_arm.ttm      # CoppeliaSim model  ├── docs/                        # Documentation  │   ├── images/                 # Screenshots and diagrams  │   └── user_guide.md           # Detailed usage instructions  └── README.md                   # This file   `
+`   prosthetic-arm-controller/  ├── main_controller.lua          # Main control script  ├── models/                      # 3D model files  │   └── prosthetic_arm.ttm      # CoppeliaSim model  ├── docs/                        # Documentation  │   ├── images/                 # Screenshots and diagrams  │   └── user_guide.md           # Detailed usage instructions  └── README.md                   # This file   `
 
 🚀 Installation
 ---------------
@@ -135,7 +135,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ### Code Example
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   -- Example of setting a custom joint position  function setCustomPosition()      -- Grasp position      setJointPosition('Thumb_Low', 45)      setJointPosition('Index_Low', 60)      setJointPosition('Middle_Low', 60)      -- ... additional joints  end   `
+`   -- Example of setting a custom joint position  function setCustomPosition()      -- Grasp position      setJointPosition('Thumb_Low', 45)      setJointPosition('Index_Low', 60)      setJointPosition('Middle_Low', 60)      -- ... additional joints  end   `
 
 🎯 Key Components
 -----------------
@@ -171,12 +171,11 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 ----------------
 
 ### Adding New Presets
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   -- Add to the presets table in setupPresetPositions()  newGesture = {      Thumb_Low = 30,      Index_Low = 45,      Middle_Low = 45,      -- ... define all joint positions  }   `
+`   -- Add to the presets table in setupPresetPositions()  newGesture = {      Thumb_Low = 30,      Index_Low = 45,      Middle_Low = 45,      -- ... define all joint positions  }   `
 
 ### Modifying Joint Limits
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   -- Adjust in the jointLimits table  jointLimits = {      armJoints = {min = -120 * math.pi/180, max = 120 * math.pi/180},      fingerJoints = {min = -10 * math.pi/180, max = 100 * math.pi/180}  }   `
+`   -- Adjust in the jointLimits table  jointLimits = {      armJoints = {min = -120 * math.pi/180, max = 120 * math.pi/180},      fingerJoints = {min = -10 * math.pi/180, max = 100 * math.pi/180}  }   `
 
 🤝 Contributing
 ---------------
